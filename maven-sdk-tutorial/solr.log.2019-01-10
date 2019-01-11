@@ -1,0 +1,44 @@
+2019-01-10 13:23:19,974 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2019-01-10 13:23:19,974 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2019-01-10 13:23:20,143 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2019-01-10 13:23:20,168 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 25 ms
+2019-01-10 13:41:30,002 ERROR [org.apache.solr.core.SolrCore] org.apache.solr.common.SolrException: openNewSearcher called on closed core
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:1447)
+	at org.apache.solr.core.SolrCore.getRealtimeSearcher(SolrCore.java:1422)
+	at org.apache.solr.handler.component.RealTimeGetComponent.process(RealTimeGetComponent.java:170)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:218)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:135)
+	at org.alfresco.solr.SolrInformationServer.getTrackerInitialState(SolrInformationServer.java:1162)
+	at org.alfresco.solr.tracker.AbstractTracker.getTrackerState(AbstractTracker.java:287)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:178)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:54)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+
+2019-01-10 13:41:30,019 ERROR [org.quartz.core.JobRunShell] Job Solr.ModelTracker-alfresco threw an unhandled Exception: 
+java.lang.NullPointerException
+	at org.alfresco.solr.SolrInformationServer.getTrackerInitialState(SolrInformationServer.java:1169)
+	at org.alfresco.solr.tracker.AbstractTracker.getTrackerState(AbstractTracker.java:287)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:178)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:54)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+2019-01-10 13:41:30,020 ERROR [org.quartz.core.ErrorLogger] Job (Solr.ModelTracker-alfresco threw an exception.
+org.quartz.SchedulerException: Job threw an unhandled exception. [See nested exception: java.lang.NullPointerException]
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:227)
+	at org.quartz.simpl.SimpleThreadPool$WorkerThread.run(SimpleThreadPool.java:563)
+Caused by: java.lang.NullPointerException
+	at org.alfresco.solr.SolrInformationServer.getTrackerInitialState(SolrInformationServer.java:1169)
+	at org.alfresco.solr.tracker.AbstractTracker.getTrackerState(AbstractTracker.java:287)
+	at org.alfresco.solr.tracker.AbstractTracker.track(AbstractTracker.java:178)
+	at org.alfresco.solr.tracker.TrackerJob.execute(TrackerJob.java:54)
+	at org.quartz.core.JobRunShell.run(JobRunShell.java:216)
+	... 1 more
+2019-01-10 14:28:44,527 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2019-01-10 14:28:44,528 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2019-01-10 14:28:44,638 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2019-01-10 14:28:45,028 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 390 ms
+2019-01-10 14:30:40,194 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2019-01-10 14:30:40,194 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Initializing SuggestComponent
+2019-01-10 14:30:40,314 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loading suggester index for: shingleBasedSuggestions
+2019-01-10 14:30:40,668 INFO  [org.alfresco.solr.component.AsyncBuildSuggestComponent] Loaded suggester shingleBasedSuggestions, took 354 ms

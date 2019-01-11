@@ -1,0 +1,6 @@
+target/
+.idea
+alf_data_dev
+.classpath
+.settings
+.project
